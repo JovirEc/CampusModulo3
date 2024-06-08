@@ -8,13 +8,10 @@ import { createPostService } from './app/services/TestServices';
 export default function App() {
 
   const createPost = () => {
-    console.log("creando post " + subject + " " + message);
+    //console.log("creando post " + subject + " " + message);
     createPostService({
         equipo1: puntEquipo1,
         equipo2: puntEquipo2
-    },()=>{
-        console.log("Ejecutando fnExito, mostrando alerta.");
-        Alert.alert("CONFIRMACIÓN", "Se ha ingresado un nuevo POST");
     }
     )
 }
