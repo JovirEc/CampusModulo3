@@ -1,0 +1,16 @@
+insert into equipo (nombre,codigo) values ('Argentina','032');
+insert into equipo (nombre,codigo) values ('Perú','604');
+insert into equipo (nombre,codigo) values ('Chile','152');	
+insert into equipo (nombre,codigo) values ('Canadá','124');	
+insert into equipo (nombre,codigo) values ('México','484');
+insert into equipo (nombre,codigo) values ('Ecuador','218');
+insert into equipo (nombre,codigo) values ('Venezuela','862');
+insert into equipo (nombre,codigo) values ('Jamaica','388');
+insert into equipo (nombre,codigo) values ('Estados Unidos','840');
+insert into equipo (nombre,codigo) values ('Uruguay','858');
+insert into equipo (nombre,codigo) values ('Panamá','591');
+insert into equipo (nombre,codigo) values ('Bolivia','068');
+insert into equipo (nombre,codigo) values ('Brasil','076');
+insert into equipo (nombre,codigo) values ('Colombia','170');
+insert into equipo (nombre,codigo) values ('Paraguay','600');
+insert into equipo (nombre,codigo) values ('Costa Rica','188');
