@@ -1,4 +1,4 @@
-export const createPostService = (post, fnExito) => {
+export const createPostService = (equipos) => {
     const config={
         method:'POST',
         body:JSON.stringify({
@@ -12,10 +12,10 @@ export const createPostService = (post, fnExito) => {
             cod_equipo2: {
                 codigo: "591"
             },
-            gol_equipo1: 2,
-            gol_equipo2: 2,
+            gol_equipo1: equipos.equipo1,
+            gol_equipo2: equipos.equipo2,
             codigo_partido: {
-                codigo: 1
+                codigo: 4
             }
         }),
         headers:{
@@ -23,7 +23,7 @@ export const createPostService = (post, fnExito) => {
         }
     };
 
-    fetch('http://192.168.100.9:8080/inventarios2/rest/tiposdocumento/agregar', config)
+    fetch('http://localhost:9091/inventarios-1.0.0/rest/pronostico/crear', config)
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
