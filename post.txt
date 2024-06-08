@@ -1,0 +1,28 @@
+export const createPronostico=()=>{
+    const config={
+        method:'POST',
+        body:JSON.stringify({
+        
+            codigo_usuario: {
+                cedula: "1723415418"
+            },
+            cod_equipo1: {
+                codigo: "032"
+            },
+            cod_equipo2: {
+                codigo: "591"
+            },
+            gol_equipo1: 2,
+            gol_equipo2: 2,
+            codigo_partido: {
+                codigo: 1
+            }
+        }),
+        headers:{
+            'Content-type':'application/json'
+        }
+    };
+    fetch('http://localhost:9091/inventarios-1.0.0/rest/pronostico/crear',config)
+    .then((response)=>{return response.json()})
+    .then((json)=>{console.log(json)});
+}
